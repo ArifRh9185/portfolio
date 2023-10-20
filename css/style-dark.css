@@ -1,0 +1,387 @@
+:root {
+  --primary: #0c457a;
+  --primary2: #115695;
+  --gr1: #f4dd4b;
+  --gr2: #f6c616;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  background-color: black;
+  color: rgba(255, 245, 245);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* float items */
+.float {
+  border: 1px solid rgba(255, 245, 245);
+  border-radius: 10px;
+  background-color: green;
+  font-size: 10px;
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.float a {
+  color: rgba(255, 245, 245);
+}
+
+.wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 5.3rem 8.3rem;
+}
+
+select {
+  margin: 10px 0;
+  width: 70px;
+  text-align: center;
+  border-radius: 20px;
+  color: rgba(255, 245, 245);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+}
+.navbar .nav-logo {
+  display: flex;
+  flex-direction: column;
+}
+.nav-logo h2 {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.nav-logo h3,
+h3 {
+  font-weight: 500;
+  color: rgba(255, 245, 245);
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
+}
+
+.navbar .nav-logo .logo {
+  width: 100px;
+  height: 103px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.verified {
+  margin-bottom: -3px;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.1rem;
+  gap: 0.3rem;
+  position: relative;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.navbar-nav a {
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  align-items: end;
+  padding: 10px;
+  color: rgba(255, 245, 245);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.5s ease;
+}
+.navbar-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 245, 245);
+}
+
+.navbar-nav a .navbar-icon {
+  margin-right: 10px;
+}
+#hamburger-menu {
+  display: none;
+}
+.navbar .socials h3 {
+  padding: 1rem 0;
+}
+.navbar .socials a {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: rgba(255, 245, 245);
+}
+.cta .link1 {
+  padding: 1rem;
+}
+
+.cta .link1 img {
+  margin: 20px 0;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.cta .link1 h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 5px;
+}
+.cta .link1 h3 {
+  font-size: 0.9rem;
+}
+.cta .link1 p {
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  color: rgba(255, 245, 245);
+}
+
+/* content */
+.content {
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin: 0 2rem;
+  text-align: justify;
+}
+.content .jumbotron h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.jumbotron .shake {
+  color: #f6c616;
+}
+.jumbotron ul {
+  text-decoration: dotted;
+  display: flex;
+  padding: 1rem 0;
+}
+.jumbotron ul li {
+  margin: 0 2rem;
+  font-size: 1.3rem;
+  color: rgba(255, 245, 245);
+}
+.jumbotron p {
+  font-size: 1.1rem;
+  color: rgba(255, 245, 245);
+  line-height: 30px;
+  padding-bottom: 2rem;
+}
+
+.main {
+  margin-top: 20px;
+  border-top: 1px solid rgb(255, 255, 255, 0.3);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 245, 245);
+}
+.main h2 {
+  margin: 1rem 0;
+  font-weight: 500;
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  color: rgba(255, 245, 245);
+}
+.main .resume a {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  color: rgba(255, 245, 245);
+  font-size: 1rem;
+}
+.main .resume .i-resume {
+  width: 20px;
+}
+
+.main .resume a:hover {
+  color: rgba(255, 245, 245);
+}
+
+.content .cta {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+.content .cta .link1 {
+  height: 150px;
+  border-radius: 15px;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+}
+.content .cta .link1:hover {
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+/* media queries   */
+
+/* laptop */
+@media (max-width: 1528px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (max-width: 1366px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1226px) {
+  html {
+    font-size: 70%;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .navbar .nav-logo {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar .nav-logo .logo {
+    margin: 4rem auto 0;
+  }
+  .navbar-nav a {
+    align-items: center;
+    padding: 0 2px;
+  }
+  .navbar .navbar-nav .navbar-icon {
+    width: 20px;
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .navbar .socials {
+    display: none;
+  }
+  .content {
+    margin: 1rem 0;
+  }
+  .content .cta {
+    grid-template-columns: 100%;
+  }
+  .content .cta .link1 h2 {
+    font-size: 2rem;
+  }
+  .content .cta .link1 h3 {
+    font-size: 1.3rem;
+  }
+  .content .cta .link1 p {
+    font-size: 1.3rem;
+  }
+  .tema {
+    margin: 0;
+  }
+  .switch {
+    margin: 10px auto;
+  }
+}
+
+/* phone */
+@media (max-width: 860px) {
+  html {
+    font-size: 60%;
+  }
+  .content {
+    padding: 10px;
+    margin: 10px -10px;
+  }
+
+  .navbar .nav-logo {
+    margin: 1rem 0;
+  }
+  .navbar .nav-logo h2 {
+    text-align: left;
+    position: absolute;
+    left: 70px;
+    top: 20px;
+  }
+  .navbar .nav-logo h3 {
+    text-align: left;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+  }
+
+  .navbar .nav-logo .logo {
+    margin: 1rem 0 0;
+    width: 60px;
+    height: 61.5px;
+  }
+
+  #hamburger-menu {
+    display: inline;
+    position: absolute;
+    right: 0;
+    transition: 2s;
+  }
+
+  .navbar .navbar-nav {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 0.1rem;
+    gap: 0.3rem;
+    position: relative;
+  }
+  .navbar .navbar-nav.active {
+    display: flex;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23.5px;
+    margin: 8px 8px;
+  }
+  .switch-tag {
+    position: relative;
+    display: inline;
+    width: 90px;
+    margin: 0;
+  }
+}
+@media (max-width: 376px) {
+  html {
+    font-size: 50%;
+  }
+}
