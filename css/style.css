@@ -52,15 +52,6 @@ body {
   color: white;
 }
 
-/* wrapper darkmode */
-.wrapper-dark {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  margin: 5.3rem 8.3rem;
-  color: white;
-}
-
 .wrapper {
   width: 80%;
   display: grid;
@@ -205,15 +196,7 @@ h3 {
   line-height: 30px;
   padding-bottom: 2rem;
 }
-/* main dark */
-.main-dark {
-  margin-top: 20px;
-  border-top: 1px solid rgb(255, 255, 255);
-  padding: 1.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-}
+
 .main {
   margin-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -243,6 +226,21 @@ h3 {
 
 .main .resume a:hover {
   color: rgba(0, 0, 0);
+}
+.content .cta::-webkit-scrollbar {
+  width: 0;
+  scroll-behavior: smooth;
+}
+
+.content .cta#scroll {
+  display: flex;
+  flex-direction: row;
+  max-height: 200px;
+  overflow-x: auto;
+}
+
+.content .cta .link1#scroll {
+  min-width: 300px;
 }
 
 .content .cta {
@@ -318,7 +316,7 @@ h3 {
     grid-template-columns: 100%;
   }
   .content .cta .link1 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .content .cta .link1 h3 {
     font-size: 1.3rem;
@@ -339,6 +337,7 @@ h3 {
   html {
     font-size: 60%;
   }
+
   .content {
     padding: 10px;
     margin: 10px -10px;

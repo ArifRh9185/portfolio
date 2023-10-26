@@ -118,13 +118,12 @@ h3 {
   border-radius: 0.8rem;
   align-items: end;
   padding: 10px;
-  color: rgba(255, 245, 245);
+  color: rgba(255, 245, 245, 0.5);
   font-weight: 500;
   font-size: 1rem;
   transition: 0.5s ease;
 }
 .navbar-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
   color: rgba(255, 245, 245);
 }
 
@@ -229,6 +228,21 @@ h3 {
 
 .main .resume a:hover {
   color: rgba(255, 245, 245);
+}
+.content .cta::-webkit-scrollbar {
+  width: 0;
+  scroll-behavior: smooth;
+}
+
+.content .cta#scroll {
+  display: flex;
+  flex-direction: row;
+  max-height: 200px;
+  overflow-x: auto;
+}
+
+.content .cta .link1#scroll {
+  min-width: 300px;
 }
 
 .content .cta {
